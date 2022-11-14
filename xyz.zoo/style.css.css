@@ -1,0 +1,96 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /*supaya border termasuk dalam box*/
+    box-sizing: border-box ;
+}
+.main-visual img{
+    width: 100%;
+}
+.animal-list a{
+    width: 500px;
+    display: block;
+}
+.animal-list a img{
+    width: 100%;
+}
+.font-josefin {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 990px;
+    width: 100%;
+    margin: auto;
+}
+.banner {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+.banner img {
+    display: block;
+    width: 100%;
+}
+.h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: rgb(55, 1, 141);
+    text-align: center;
+}
+.h4 {
+    text-align: center;
+}
+.font-blue {
+    color: cadetblue;
+}
+.kiri {
+    /*background: url(../img/owl.jpg) center center no-repeat; */
+    background-image: url(../Basic-Coding/img/owl.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kanan {
+    background-color: cornsilk;
+}
+.kiri, .kanan {
+    height: 350px;
+    width: 49%;
+    overflow: hidden;
+}
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project a {
+    text-decoration: none;
+    font-size: 48px;font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgray;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: darkseagreen;
+    filter: blur(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.project a:hover {
+    filter: none;
+    background: none;
+}
+@media only screen and (max-widht: 425px) {
+    .kiri, .kanan {
+        width: 100%;
+    }
+    .kiri {margin-bottom: 20px;
+    }
+}
+@media only screen and (max-widht : 990px) {
+    .container {
+        padding: 0 10px;
+    }
+}

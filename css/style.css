@@ -1,0 +1,173 @@
+    @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@600&family=Signika+Negative&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box; 
+}
+
+body {
+    background-color: rgb(196, 248, 255);
+    color: rgb(115, 112, 255);
+}
+
+.font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.font-abel {
+    font-family: 'Abel', sans-serif;
+}
+.font-signika {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+p {
+    line-height: 19px;
+    margin-bottom: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(159, 189, 253);
+    font-size: 85px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(47, 66, 168);
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 10px 
+}
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(21, 48, 100);
+    font-size: 45px;
+    text-align: center;
+    padding: 10px 10px
+}
+
+
+a {
+   
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+  }
+  
+  a:before{
+    content: '';
+    background: #4adbf5;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: step-start;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+
+a {
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+img:hover {
+    width: 70%;
+}
+
+
+.projects .row {
+    margin-top: 50px;
+    padding: 10px 10px
+}
+
+#top {
+    background-image: url(../img/maru.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px; 
+    padding-top: 1px;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+}
+
+#top h1 {
+    margin: 180px 0 40px 0;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .row .col  {
+        width: 100%;
+        margin-top: 0;
+    }
+    .row .col  h4{
+        font-size: 8px;
+    }
+    .row .col  p{
+        font-size: 12px;
+    }
+    .ctn{
+        font-size: 12px;
+    }
+    img{
+        width: 120px;
+        height: auto;
+    }
+    .container h1{
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .container h3{
+        font-size: 30px;
+        padding: 8px 8px;
+    }
+    #top{
+        height: 420px; 
+    }
+    .title h2{
+        font-size: 24px;
+    }
+    .line {
+        width: 160px;
+        height: 3px;
+    }
+    section {
+        width: 80%;
+        margin: 40px auto;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+
