@@ -11,9 +11,9 @@ body {
 h2,h3 {
     font-family: 'Germania One', cursive;
 }
-h2 {
-    font-size: 60px;
-    color: #ffffff;
+h3 {
+    font-size: 48px;
+    color: #323131;
 }
 h3 {
     font-size: 48px;
@@ -22,7 +22,7 @@ h3 {
 p{
     text-align: justify;
 }
-#top {
+#toco {
     background-image: url(../storyteller/images/BGtop.jpeg);
     background-position: center;
     background-size: cover;
@@ -32,9 +32,52 @@ p{
     justify-content: flex-end;
     align-items: center;
 }
-.logo {
-margin-top: 0%;
+.cta{
+    color: #fff;
+    font-size: 18px;
+    width: 50%;
+    max-width: 550px;
 }
+.cta h2 {
+    font-size: 60px;
+}
+.cta-buttons a {
+    width: 40%;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 15px 0;
+}
+.explore {
+    background-image: linear-gradient(to right, #500c7a, #9f2f87);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.explore:hover {
+    background: #500c7a;
+}
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.nav-wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.nav-wrapper .logo {
+    max-width: 115px;
+}
+.navbar
 #nav {
     width: 100%;
     position: absolute;
@@ -48,7 +91,7 @@ margin: 240px auto;
 padding: 50px 50px;
 }
 .isi {
-    text-align: right;
+    
 }
 .nav-wrapper {
     width: 90%;
